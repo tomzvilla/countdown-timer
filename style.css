@@ -1,0 +1,109 @@
+* {
+    font-family: 'Figtree', sans-serif;
+}
+
+body{
+    background-image: url(./img/mountain.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 0;
+}
+
+
+.main-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.main-wrapper h1{
+    font-size: 3rem;
+    color: #afd4f5;
+    margin-top: 5rem;
+    font-weight: 400;
+}
+
+.countdown-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    color: #afd4f5;
+}
+
+.big-number{
+    font-size: 6rem;
+    font-weight: 600;
+    line-height: 1;
+    margin: 1rem 2.8rem;
+}
+
+.countdown-el span{
+    font-size: 1.25rem;
+}
+
+.config{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0.75rem 0.55rem;
+    cursor: pointer;
+    color: grey;
+}
+
+.config :hover{
+    animation-name: rotateGear;
+    animation-duration: 1s;
+}
+
+.date-wrapper{
+    margin: 10rem 0;
+}
+
+.date-wrapper input{
+    height: 20px;
+    width: 200px;
+}
+
+.hide{
+    animation: fadeOut 1s linear 1 forwards;
+}
+
+.show{
+    animation: fadeIn 1s linear 1 forwards;
+}
+/*Config Styles*/
+
+/* .container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-wrapper{
+    padding: 400px;
+    border: black 1px solid;
+    background-color: rgb(176, 213, 245,0.65);
+    /* opacity: 0.5; 
+} 
+*/
+/* Gear Animation*/
+
+@keyframes rotateGear {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(-180deg);}
+}
+
+@keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
